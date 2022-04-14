@@ -6,7 +6,7 @@ public class BuscaMinas {
 	 * repetidas), pide al usuario fila y columna (solo zonas que no se hayan
 	 * explorado). El jugador gana cuando no pisa ninguna mina durante 5 turnos
 	 * seguidos. Si pisa una mina, el juego termina. Estos son los valores que
-	 * debemos mostrar: - V = Vacio - M = Mina - X = No explorado
+	 * debemos mostrar: 'V' = Vacio | 'M' = Mina | '-' = No explorado
 	 */
 	public static void main(String[] args) {
 		// declaramos variables a usar
@@ -108,6 +108,7 @@ public class BuscaMinas {
 	static int genRan7() {
 		return (int) (Math.random() * 7) + 0;
 	}
+	
 	//pues imprime el campo basicamente.
 	static void imprimirCampo(int[] numeros, char[][] campo) {
 		// imprime campo visible
